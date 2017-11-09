@@ -46,7 +46,7 @@ public class Main {
             else
                 System.out.println("You do not win this time. Please try again.");
 
-
+            // Retry and increase buying by 1 if yes
             buying = Retry.retry(buying);
 
         }while(retry);
