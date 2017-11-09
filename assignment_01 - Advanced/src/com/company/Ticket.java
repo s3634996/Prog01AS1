@@ -22,18 +22,19 @@ public class Ticket {
                 try {
                     value_int = Integer.parseInt(IntInput);
                     if(value_int< 0 || value_int >45){
-                        System.out.println("Number out of allowed range. Please enter your "+OrdinalConvert.convert(i)+" number again.");
+                        System.out.println("\033[31;1mNumber out of allowed range. Please enter your "+OrdinalConvert.convert(i)+" number again.\033[0m");
                         Error = true;
                     }
                     else {
                         ticket[i] = value_int;
                     }
                 } catch (NumberFormatException e) {
-                    System.out.println("Invalid Input. Please enter again.");
+                    System.out.println("\033[31;1mInvalid Input. Please enter again.\033[0m");
                     Error = true;
                 }
             } while(Error);
         }
         return ticket;
     }
+
 }

@@ -11,6 +11,14 @@ public class Main {
         int[] ticket = Ticket.ticket();
         Arrays.sort(ticket);
 
+        // Display ticket
+        System.out.println("This is your final ticket number");
+        for (int i = 0; i < ticket.length; i++) {
+            System.out.print(ticket[i]+" ");
+            Thread.sleep(500);
+        }
+        System.out.println();
+
         // Lottery number
         System.out.println("This is our number for today.");
         int[] lottery = Lottery.lottery();
