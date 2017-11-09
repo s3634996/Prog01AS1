@@ -11,6 +11,31 @@ public class Main {
         System.out.println();
         Arrays.sort(lottery);
 
+        int[] user_input = new int[6];
+        int value_int = 0;
+        for (int i = 0; i < user_input.length ; i++) {
+            Scanner sc = new Scanner(System.in);
+            boolean Error=false;
+            do {
+                Error =false;
+                System.out.print("Please enter number of your ticket (from 0 to 45): ");
+                String IntInput = sc.next();
+                try {
+                    value_int = Integer.parseInt(IntInput);
+                    if(value_int< 0 || value_int >45){
+                        System.out.println("ABC");
+                        Error = true;
+                    }
+                    else {
+                        user_input[i] = value_int;
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid Input. Please enter again.");
+                    Error = true;
+                }
+            } while(Error);
+        }
+        System.out.println(user_input[5]);
 
         System.out.println("This is number on your ticket.");
         int[] ticket = Ticket.ticket();
