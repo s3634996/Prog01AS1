@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class EditTicket {
-    protected static int setPos(){
+    protected static void setPos(){
         boolean Error;
 
         // position checking
@@ -27,7 +27,6 @@ public class EditTicket {
             }
 
         }while(Error);
-        return pos_int;
     }
 
     protected static int setVal(int[] array){
