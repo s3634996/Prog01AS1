@@ -24,7 +24,7 @@ public class Main {
             // Customer Ticket
             System.out.println("This will be your "+OrdinalConvert.convert(buying-1)+" ticket for today.");
             int[] ticket = Ticket.ticket();
-            Arrays.sort(ticket);
+//            EditTicket.setVal(ticket);
 
             // Display ticket
             System.out.println("This is your final ticket number");
@@ -33,6 +33,7 @@ public class Main {
                 Thread.sleep(500);
             }
             System.out.println();
+            Arrays.sort(ticket);
 
             // Lottery number
             System.out.println("This is our number for today.");
