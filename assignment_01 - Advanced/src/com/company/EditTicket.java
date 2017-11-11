@@ -54,4 +54,8 @@ public class EditTicket {
 
         return pos_int;
     }
+
+    protected static void update_val(){
+
+    }
 }

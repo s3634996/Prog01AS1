@@ -31,6 +31,8 @@ public class Main {
             // Change desired number
 
             int position_int = EditTicket.pos();
+            // problems: if user enter N ( stand for No)
+            // return position_int will equal 0
             System.out.println(position_int);
 
             // Display ticket
