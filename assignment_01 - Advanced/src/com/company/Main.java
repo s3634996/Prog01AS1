@@ -47,23 +47,23 @@ public class Main {
                     try {
                         pos_int = Integer.parseInt(sc_pos);
                         if(pos_int < 1 || pos_int > 6){
-                            System.out.println("\033[31;1mNumber out of allowed range. Please enter your "+OrdinalConvert.convert(i)+" number again.\033[0m");
+                            System.out.println("\033[31;1mNumber out of allowed range. Please enter your "+OrdinalConvert.convert(pos_int-1)+" number again.\033[0m");
                             Error = true;
                         }
-                        else
+                        else{
+                            System.out.println(pos_int);
                             Error = false;
+                        }
                     } catch (NumberFormatException e){
                         System.out.println("\033[31;1mInvalid Input. Please enter again.\033[0m");
                         Error = true;
                     }
                 }while (Error);
-
             }
             else if(change.equalsIgnoreCase("n"))
                 break;
             else
                 System.out.printf("\033[31;1mInvalid Input. Please enter again.\033[0m");
-
 
 
 
