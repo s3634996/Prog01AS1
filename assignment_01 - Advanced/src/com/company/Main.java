@@ -27,43 +27,8 @@ public class Main {
 //            EditTicket.setVal(ticket);
 
 
-//            // On beta for this section
-//            // Change desired number
-//            Scanner ch = new Scanner(System.in);
-//            System.out.print("Do you want to change your ticket number? ");
-//            String change = ch.next();
-//
-//            boolean Error;
-//
-//            if(change.equalsIgnoreCase("y")){
-//                int pos_int = 0;
-//                Scanner sc_ch = new Scanner(System.in);
-//                do{
-//                    Error = false;
-//
-//                    System.out.print("Which position do you want to change? (from 1 to 6) ");
-//                    String sc_pos = sc_ch.next();
-//
-//                    try {
-//                        pos_int = Integer.parseInt(sc_pos);
-//                        if(pos_int < 1 || pos_int > 6){
-//                            System.out.println("\033[31;1mNumber out of allowed range. Please enter your "+OrdinalConvert.convert(pos_int-1)+" number again.\033[0m");
-//                            Error = true;
-//                        }
-//                        else{
-//                            System.out.println(pos_int);
-//                            Error = false;
-//                        }
-//                    } catch (NumberFormatException e){
-//                        System.out.println("\033[31;1mInvalid Input. Please enter again.\033[0m");
-//                        Error = true;
-//                    }
-//                }while (Error);
-//            }
-//            else if(change.equalsIgnoreCase("n"))
-//                break;
-//            else
-//                System.out.printf("\033[31;1mInvalid Input. Please enter again.\033[0m");
+            // On beta for this section
+            // Change desired number
 
             int position_int = EditTicket.pos();
             System.out.println(position_int);

@@ -34,7 +34,6 @@ public class EditTicket {
                         }
                         else{
                             equal_Error = false;
-                            return pos_int;
                         }
                     } catch (NumberFormatException e){
                         System.out.print("\033[31;1mInvalid Input. Please enter again.(Y or N) \033[0m");
