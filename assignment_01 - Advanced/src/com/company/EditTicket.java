@@ -8,6 +8,8 @@ public class EditTicket {
         boolean equal_Error;
         boolean sc_Error;
 
+        int pos_int = 0;
+
         Scanner ch = new Scanner(System.in);
 
         System.out.print("Do you want to change your ticket number? ");
@@ -17,7 +19,6 @@ public class EditTicket {
             String change = ch.next();
 
             if(change.equalsIgnoreCase("y")){
-                int pos_int = 0;
                 Scanner sc_ch = new Scanner(System.in);
                 do{
                     equal_Error = false;
@@ -51,5 +52,7 @@ public class EditTicket {
                 sc_Error = true;
             }
         }while (sc_Error);
+
+        return pos_int;
     }
 }
