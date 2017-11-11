@@ -12,10 +12,9 @@ public class EditTicket {
 
         Scanner ch = new Scanner(System.in);
 
-        System.out.print("Do you want to change your ticket number? ");
-
         do{
             sc_Error = false;
+            System.out.print("Do you want to change your ticket number? ");
             String change = ch.next();
 
             if(change.equalsIgnoreCase("y")){
@@ -36,7 +35,7 @@ public class EditTicket {
                             equal_Error = false;
                         }
                     } catch (NumberFormatException e){
-                        System.out.print("\033[31;1mInvalid Input. Please enter again.(Y or N) \033[0m");
+                        System.out.println("\033[31;1mInvalid Input. Please enter again.\033[0m");
                         equal_Error = true;
                     }
                 }while (equal_Error);
@@ -47,7 +46,7 @@ public class EditTicket {
                 break;
             }
             else{
-                System.out.printf("\033[31;1mInvalid Input. Please enter again.\033[0m");
+                System.out.println("\033[31;1mInvalid Input. Please enter again.(Y or N) \033[0m");
                 sc_Error = true;
             }
         }while (sc_Error);

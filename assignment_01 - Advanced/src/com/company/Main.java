@@ -9,11 +9,11 @@ public class Main {
 
         // Customer Info
         // Display basic user information
-        String[] final_info = UserInfo.userInfo();
-        System.out.println("\033[31;1mYour name is "+final_info[0]);
-        System.out.println("Your address is "+final_info[1]);
-        System.out.println("You are "+final_info[2]+ " years old.\033[0m");
-        System.out.println("You are eligible to do the lottery. You will begin to choose number shortly.");
+//        String[] final_info = UserInfo.userInfo();
+//        System.out.println("\033[31;1mYour name is "+final_info[0]);
+//        System.out.println("Your address is "+final_info[1]);
+//        System.out.println("You are "+final_info[2]+ " years old.\033[0m");
+//        System.out.println("You are eligible to do the lottery. You will begin to choose number shortly.");
 
         // Declare boolean for retry
         boolean retry;
@@ -33,7 +33,11 @@ public class Main {
             int position_int = EditTicket.pos();
             // problems: if user enter N ( stand for No)
             // return position_int will equal 0
-            System.out.println(position_int);
+            if (position_int == 0){
+                break;
+            }
+            else System.out.println(position_int);
+//            System.out.println(position_int);
 
             // Display ticket
             System.out.println("This is your final ticket number");
