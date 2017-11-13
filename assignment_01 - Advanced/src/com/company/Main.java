@@ -19,24 +19,24 @@ public class Main {
         boolean retry;
         int buying = 1;
         do{
-            retry = true;
+            retry = false;
 
             // Customer Ticket
             System.out.println("This will be your "+OrdinalConvert.convert(buying-1)+" ticket for today.");
             int[] ticket = Ticket.ticket();
 //            EditTicket.setVal(ticket);
 
-
             // On beta for this section
             // Change desired number
 
-            int position_int = EditTicket.pos();
+//            int position_int = EditTicket.pos();
             // problems: if user enter N ( stand for No)
             // return position_int will equal 0
-            if (position_int == 0){
-                break;
-            }
-            else System.out.println(position_int);
+//            int val_pos = position_int - 1;
+//            if (position_int < 0){
+//
+//            }
+//            else System.out.println(position_int);
 //            System.out.println(position_int);
 
             // Display ticket

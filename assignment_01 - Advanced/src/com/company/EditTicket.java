@@ -5,26 +5,29 @@ import java.util.Scanner;
 public class EditTicket {
     protected static int pos(){
 
-        boolean equal_Error;
-        boolean sc_Error;
+        boolean equal_Error; // Used for Y or N checking
+        boolean sc_Error; // Used for position integer checking
 
         int pos_int = 0;
 
-        Scanner ch = new Scanner(System.in);
+        Scanner ch = new Scanner(System.in); // Used for Y or N input
 
         do{
             sc_Error = false;
             System.out.print("Do you want to change your ticket number? ");
+            // Receive input either Y or N from user
             String change = ch.next();
 
+            // Check user input for Y or N
             if(change.equalsIgnoreCase("y")){
-                Scanner sc_ch = new Scanner(System.in);
+                Scanner sc_ch = new Scanner(System.in); // Used for position input
                 do{
                     equal_Error = false;
 
                     System.out.print("Which position do you want to change? (from 1 to 6) ");
+                    // Receive position input from user
                     String sc_pos = sc_ch.next();
-
+                    // Try to convert input into integer
                     try {
                         pos_int = Integer.parseInt(sc_pos);
                         if(pos_int < 1 || pos_int > 6){
