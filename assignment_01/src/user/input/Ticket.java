@@ -1,9 +1,11 @@
-package com.company;
+package user.input;
+
+import number.OrdinalConvert;
 
 import java.util.Scanner;
 
 public class Ticket {
-    protected static int[] ticket(){
+    public static int[] ticket(){
 
         int[] ticket = new int[6];
         int value_int = 0;

@@ -1,5 +1,7 @@
 package com.company;
 
+import number.RandNumb;
+
 public class Lottery {
     protected static int[] lottery() throws InterruptedException{
         int[] lottery = new int[6];

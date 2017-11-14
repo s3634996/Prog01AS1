@@ -1,4 +1,4 @@
-package com.company;
+package number;
 
 public class OrdinalConvert {
     public static String ordinal(int i) {
@@ -12,7 +12,7 @@ public class OrdinalConvert {
                 return i + suffixes[i % 10];
         }
     }
-    protected static String convert(int i){
+    public static String convert(int i){
         int ordinal_number = i+1;
         String ordinal_letter = ordinal(ordinal_number);
         return ordinal_letter;

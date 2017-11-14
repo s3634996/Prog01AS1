@@ -1,4 +1,4 @@
-package com.company;
+package user.input;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class UserInfo {
     // Get user information
-    protected static String[] userInfo(){
+    public static String[] userInfo(){
         Scanner sc = new Scanner(System.in);
         List<String> info = new ArrayList<String>();
 

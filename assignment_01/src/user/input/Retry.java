@@ -1,9 +1,9 @@
-package com.company;
+package user.input;
 
 import java.util.Scanner;
 
 public class Retry {
-    protected static int ticket_ascend(int buying_ticket){
+    public static int ticket_ascend(int buying_ticket){
         boolean retype;
         do{
             retype = false;
